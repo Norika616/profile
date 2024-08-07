@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定 -->
+    <meta charset="UTF-8" />
+    <!-- スマホ・タブレットでもきれいに表示するレスポンシブ表示のための記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコン -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- 検索エンジンにヒットさせないための記述 -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトのタイトル -->
+    <title>Profile</title>
+    <!-- サイトの概要 -->
+    <meta name="description" content="わたしのプロフィール" />
+
+    <!-- スタイルシートを読み込むための記述 -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Google Fontsを読み込むための記述 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__inner inner">
+        <h1 class="header__logo">
+          <img src="./img/logo.svg" alt="Profile" width="120" height="40" />
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav--list">
+            <li class="header__nav--link"><a id="about" href="">About</a></li>
+            <li class="header__nav--link">
+              <a id="bicycle" href="">Bicycle</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- / header -->
+
+    <!-- fv -->
+    <div class="fv">
+      <div class="fv__image">
+        <img src="./img/mainvisual.jpg" alt="" width="1920" height="1280" />
+      </div>
+    </div>
+    <!-- / fv -->
+
+    <!-- about -->
+    <section class="about">
+      <div class="about__inner inner">
+        <h2 class="heading">About</h2>
+        <div class="about__content">
+          <div class="about__image">
+            <img src="./img/about.jpg" alt="" width="100" height="100" />
+          </div>
+          <div class="about__text--box">
+            <h3 class="about__name">KAKERU MIYAICHI</h3>
+            <p class="about__text">
+              テキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / about -->
+
+    <!-- bicycle -->
+    <section class="bicycle">
+      <div class="bicycle__inner inner">
+        <h2 class="heading">Bicycle</h2>
+        <div class="bicycle__boxes">
+          <div class="bicycle__box">
+            <div class="bicycle__image">
+              <img src="./img/bicycle1.jpg" alt="" width="640" height="424" />
+            </div>
+            <h3 class="bicycle__title">タイトルタイトル</h3>
+            <div class="bicycle__text">テキストテキストテキスト</div>
+          </div>
+          <div class="bicycle__box">
+            <div class="bicycle__image">
+              <img src="./img/bicycle2.jpg" alt="" width="640" height="424" />
+            </div>
+            <h3 class="bicycle__title">タイトルタイトル</h3>
+            <div class="bicycle__text">テキストテキストテキスト</div>
+          </div>
+          <div class="bicycle__box">
+            <div class="bicycle__image">
+              <img src="./img/bicycle1.jpg" alt="" width="640" height="424" />
+            </div>
+            <h3 class="bicycle__title">タイトルタイトル</h3>
+            <div class="bicycle__text">テキストテキストテキスト</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / bicycle -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <div class="footer__copyright">© 2020 Profile</div>
+      </div>
+    </footer>
+    <!-- / footer -->
+  </body>
+</html>

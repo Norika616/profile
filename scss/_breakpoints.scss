@@ -1,0 +1,17 @@
+@use "sass:map";
+
+$breakpoints: (
+  sm: "screen and (min-width: 600px)",
+);
+
+@mixin mq($breakpoint: sm) {
+  $query: map.get($breakpoints, $breakpoint);
+
+  @if $query {
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' is not defined in the \$breakpoints map.";
+  }
+}
